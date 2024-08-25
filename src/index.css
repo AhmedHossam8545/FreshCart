@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active{
+  @apply border-0 rounded-lg ;
+  color: #a308eb !important;
+}
+
+.bg-gold{
+  background-color:  #FFD700;
+}
+
+.carousel-item {
+  display: none;
+}
+.carousel-item.slider_active {
+  display: block;
+}
+
+.bg-purple{
+  background-color: #2c053e;
+}
+.text-purple{
+ color: #2c053e;
+}
+.bg-custom{
+  background-color:   #ab9ad2;
+}
+
+/* #374151 */
+
+.bg-custom-sec{
+  background-color: #D3C5E5;
+}
