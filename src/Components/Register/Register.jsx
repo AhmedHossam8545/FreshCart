@@ -31,7 +31,7 @@ export  function Register() {
             console.log(data);
             setSuccessMsg(data.message)
             setTimeout(() => {
-                navigate("/login")
+                navigate("/FreshCart/login")
             }, 500);
         }).catch((error) => {
             setIsLoading(false)
@@ -139,7 +139,7 @@ export  function Register() {
 
             <div className="mt-4 text-center">
             <span className="text-sm text-purple-500 ">Already have an account? </span>
-            <Link to={"/login"} className="text-purple-500 hover:text-purple-600 font-bold">Login</Link>
+            <Link to={"/FreshCart/login"} className="text-purple-500 hover:text-purple-600 font-bold">Login</Link>
             </div>
             
         </div>
