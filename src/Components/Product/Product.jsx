@@ -87,12 +87,12 @@ export  function Product({product}) {
     return <div className=" w-full     ">
         <div  className="relative bg-custom-sec m-auto flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
                 
-                <Link to={"/productDetails/" + product._id} className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
+                <Link to={"/FreshCart/productDetails/" + product._id} className="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
                     <img className="object-contain w-full" src={product.imageCover} alt="product image" />
                 {/* <span className="absolute top-0 left-0 m-2 rounded-full bg-black px-2 text-center text-sm font-medium text-white">39% OFF</span> */}
                 </Link>
                 <div className="mt-4 px-5 pb-5">
-                <Link to={"/productDetails/" + product._id}>
+                <Link to={"/FreshCart/productDetails/" + product._id}>
                     <h5 className="text-xl tracking-tight text-slate-900 line-clamp-1"> {product.title} </h5>
                     <p className='line-clamp-2' > {product.description} </p>
                 </Link>
