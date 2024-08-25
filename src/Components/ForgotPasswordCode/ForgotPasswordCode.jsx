@@ -86,7 +86,7 @@ export default function ForgotPasswordCode() {
             });  
 
         setIsLoading(false)
-        navigate("/forgotPasswordNewPass")
+        navigate("/FreshCart/forgotPasswordNewPass")
         
     }).catch((error) => {
         setErrorMsg(error.response.data.message);
