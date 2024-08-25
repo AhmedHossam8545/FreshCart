@@ -50,7 +50,7 @@ export  function ForgotPasswordNewPass() {
                 theme: "colored",
                 transition: Bounce,
                 });  
-            navigate("/login")
+            navigate("/FreshCart/login")
             
         }).catch((error) => {
             console.log(error);
