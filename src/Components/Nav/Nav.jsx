@@ -161,7 +161,7 @@ function NavList() {
   function logOut(){
     SetUserToken("");
     localStorage.removeItem("token")
-    navigate("/login")
+    navigate("/FreshCart/login")
   }
 
   return (
@@ -174,7 +174,7 @@ function NavList() {
         color="blue-gray"
         className=" font-medium"
       >
-       <li> <NavLink to={"/"} className="flex items-center hover:text-purple-500 transition-colors   " ><i class="fa-solid fa-home text-purple-600 me-1 mt-1 text-lg"></i>Home</NavLink> </li>
+       <li> <NavLink to={"/FreshCart/"} className="flex items-center hover:text-purple-500 transition-colors   " ><i class="fa-solid fa-home text-purple-600 me-1 mt-1 text-lg"></i>Home</NavLink> </li>
 
       </Typography>
       <Typography
@@ -183,7 +183,7 @@ function NavList() {
         color="blue-gray"
         className=" font-medium"
       >
-      <li> <NavLink to={"/products"} className="flex items-center hover:text-purple-500 transition-colors " ><i class="fa-brands fa-product-hunt text-purple-600 me-1 mt-1 text-lg"></i>Products</NavLink> </li>
+      <li> <NavLink to={"/FreshCart/products"} className="flex items-center hover:text-purple-500 transition-colors " ><i class="fa-brands fa-product-hunt text-purple-600 me-1 mt-1 text-lg"></i>Products</NavLink> </li>
 
       </Typography>
       <Typography
@@ -192,7 +192,7 @@ function NavList() {
         color="blue-gray"
         className=" font-medium"
       >
-       <li> <NavLink to={"/categories"} className="flex items-center hover:text-purple-500 transition-colors" ><i class="fa-solid fa-list text-purple-600 me-1 mt-1 text-lg"></i>Categories</NavLink> </li>
+       <li> <NavLink to={"/FreshCart/categories"} className="flex items-center hover:text-purple-500 transition-colors" ><i class="fa-solid fa-list text-purple-600 me-1 mt-1 text-lg"></i>Categories</NavLink> </li>
 
       </Typography>
       <Typography
@@ -201,7 +201,7 @@ function NavList() {
         color="blue-gray"
         className=" font-medium"
       >
-     <li> <NavLink to={"/brands"} className="flex items-center hover:text-purple-500 transition-colors" ><i class="fa-solid fa-copyright text-purple-600 me-1 mt-1 text-lg"></i>Brands</NavLink> </li>
+     <li> <NavLink to={"/FreshCart/brands"} className="flex items-center hover:text-purple-500 transition-colors" ><i class="fa-solid fa-copyright text-purple-600 me-1 mt-1 text-lg"></i>Brands</NavLink> </li>
 
       </Typography>
       <Typography
@@ -210,7 +210,7 @@ function NavList() {
         color="blue-gray"
         className=" font-medium"
       >
-   <li> <NavLink to={"/wishlist"} className="flex items-center hover:text-purple-500 transition-colors" ><i class="fa-solid fa-heart text-purple-600 me-1 mt-1 text-lg"></i>Wishlist</NavLink> </li>
+   <li> <NavLink to={"/FreshCart/wishlist"} className="flex items-center hover:text-purple-500 transition-colors" ><i class="fa-solid fa-heart text-purple-600 me-1 mt-1 text-lg"></i>Wishlist</NavLink> </li>
 
       </Typography>
       <Typography
@@ -219,7 +219,7 @@ function NavList() {
         color="blue-gray"
         className=" font-medium"
       >
-    <li> <NavLink to={"/cart"} className="flex items-center hover:text-purple-500 transition-colors" ><i class="fa-solid fa-cart-shopping text-purple-600 me-1 mt-1 text-lg"></i> Cart </NavLink> </li>
+    <li> <NavLink to={"/FreshCart/cart"} className="flex items-center hover:text-purple-500 transition-colors" ><i class="fa-solid fa-cart-shopping text-purple-600 me-1 mt-1 text-lg"></i> Cart </NavLink> </li>
 
       </Typography>
       {/* <Typography
@@ -241,7 +241,7 @@ function NavList() {
           color="blue-gray"
           className=" font-medium"
         >
-      <li><NavLink to={"/login"} className="text-black font-bold ms-5"  ><i class="fa-solid fa-right-to-bracket text-purple-600 me-1 mt-1 text-lg"></i>Login</NavLink></li>
+      <li><NavLink to={"/FreshCart/login"} className="text-black font-bold ms-5"  ><i class="fa-solid fa-right-to-bracket text-purple-600 me-1 mt-1 text-lg"></i>Login</NavLink></li>
 
         </Typography>
       <Typography
@@ -250,7 +250,7 @@ function NavList() {
           color="blue-gray"
           className=" font-medium"
         >
-      <li><NavLink to={"/register"} className="text-black font-bold ms-5"  ><i class="fa-solid fa-pen text-purple-600 me-1 mt-1 text-lg"></i>Register</NavLink></li>
+      <li><NavLink to={"/FreshCart/register"} className="text-black font-bold ms-5"  ><i class="fa-solid fa-pen text-purple-600 me-1 mt-1 text-lg"></i>Register</NavLink></li>
 
       </Typography>
       </>}
@@ -294,7 +294,7 @@ export function Nav() {
           variant="h6"
           className="mr-4 cursor-pointer py-1.5 text-xl text-purple-600"
         >
-         <NavLink to={"/"}><i class="fa-solid fa-cart-shopping text-purple-600 "></i> Fresh Cart</NavLink>
+         <NavLink to={"/FreshCart/"}><i class="fa-solid fa-cart-shopping text-purple-600 "></i> Fresh Cart</NavLink>
         </Typography>
         <div className="hidden lg:block">
           <NavList />
