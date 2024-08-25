@@ -42,8 +42,8 @@ export  function Login() {
           setIsLoading(false)
           SetUserToken(data.token);
           localStorage.setItem("token" ,data.token)
-          if (location.pathname == "/login") {
-            navigate("/")
+          if (location.pathname == "/FreshCart/login") {
+            navigate("/FreshCart/")
           }else{
             navigate(location.pathname)
           }
@@ -96,10 +96,10 @@ export  function Login() {
             </form>
 
             
-            <Link to={"/forgotPasswordEmail"} className="text-red-500 hover:text-red-600">Forgot Password?</Link>
+            <Link to={"/FreshCart/forgotPasswordEmail"} className="text-red-500 hover:text-red-600">Forgot Password?</Link>
             <div className="mt-4 text-center">
             <span className="text-sm text-gray-500 ">Does not have an account? </span>
-            <Link to={"/register"} className="text-purple-500 hover:text-purple-600">Register</Link>
+            <Link to={"/FreshCart/register"} className="text-purple-500 hover:text-purple-600">Register</Link>
             </div>
             
         </div>
