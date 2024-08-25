@@ -105,11 +105,11 @@ export  function Cart() {
                 </dl>
               </div>
 
-              <Link to={"/shippingAddress/" + cart?.data._id} href="#" className="flex w-full items-center justify-center rounded-lg  px-5 py-2.5 text-sm font-medium text-white  focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-purple hover:bg-purple-600">Proceed to Checkout</Link>
+              <Link to={"/FreshCart/shippingAddress/" + cart?.data._id} href="#" className="flex w-full items-center justify-center rounded-lg  px-5 py-2.5 text-sm font-medium text-white  focus:outline-none focus:ring-4 focus:ring-primary-300 dark:bg-primary-600 dark:hover:bg-primary-700 dark:focus:ring-primary-800 bg-purple hover:bg-purple-600">Proceed to Checkout</Link>
 
               <div className="flex items-center justify-center gap-2">
                 <span className="text-sm font-normal text-gray-500 dark:text-gray-400"> or </span>
-                <Link to={"/products"} href="#" title="" className="inline-flex items-center gap-2 text-sm font-medium text-purple-700 underline hover:no-underline dark:text-primary-500">
+                <Link to={"/FreshCart/products"} href="#" title="" className="inline-flex items-center gap-2 text-sm font-medium text-purple-700 underline hover:no-underline dark:text-primary-500">
                   Continue Shopping
                   <svg className="h-5 w-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 12H5m14 0-4 4m4-4-4-4" />
