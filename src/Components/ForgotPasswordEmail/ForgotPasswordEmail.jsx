@@ -53,7 +53,7 @@ export  function ForgotPasswordEmail() {
                 transition: Bounce,
                 });     
 
-                navigate("/forgotPasswordCode")
+                navigate("/FreshCart/forgotPasswordCode")
             console.log(data.message);
 
             
