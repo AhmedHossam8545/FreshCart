@@ -7,7 +7,7 @@ export function CategoryCard({category }) {
     
     return (
         <>
-        <Link to={`/category/${category._id}`} className='cursor-default'>
+        <Link to={`/FreshCart/category/${category._id}`} className='cursor-default'>
             <img className="h-96 w-96 object-cover object-center  rounded-full hover:shadow-lg hover:shadow-purple-500 duration-300" src={category.image} alt={category.name} />
             <h1 className="text-3xl font-bold text-gray-900 text-center">{category.name}</h1>
         </Link>
